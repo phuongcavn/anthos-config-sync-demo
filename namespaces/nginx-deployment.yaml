@@ -4,6 +4,8 @@ metadata:
   name: nginx-deployment
   labels:
     app: nginx
+  annotations:
+    configsync.gke.io/cluster-name-selector: gke-service-mesh
 spec:
   replicas: 3
   selector:
